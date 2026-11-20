@@ -69,7 +69,12 @@ Conference ........................... 13-17 September 2027
 SUBMISSION
 
 Papers are submitted through the main IFSA-EUSFLAT 2027 submission system and
-follow the same guidelines, formats, and deadlines as regular papers.
+follow the same guidelines, formats, and deadlines as regular papers:
+
+- Full papers: 12-15 pages plus references, published in Springer Lecture
+  Notes in Computer Science (LNCS)
+- Communications: at least 6 pages, published in a separate open collection
+- Abstracts: up to 5 pages, published in a separate open collection
 
 Selected contributions will be considered for publication in extended form in
 journals or edited books. Submission instructions will be available at
