@@ -1,0 +1,90 @@
+CALL FOR PAPERS
+
+ML4FS: Machine Learning with and for Fuzzy Sets
+Special session at IFSA-EUSFLAT 2027
+Joint 22nd IFSA World Congress and 15th EUSFLAT Conference
+Bari, Italy, 13-17 September 2027
+
+https://ml4fs.github.io
+
+Paper submission deadline: 14 February 2027 (AoE)
+
+
+SCOPE
+
+Machine learning and fuzzy set theory offer complementary perspectives on
+learning from complex, uncertain, and gradually structured data. Fuzzy sets
+give machine-learning systems principled ways to represent vagueness, graded
+concepts, uncertain labels, and linguistic knowledge. Conversely,
+machine-learning techniques make it possible to construct, adapt, validate,
+and compress fuzzy sets and fuzzy systems directly from data.
+
+ML4FS brings together researchers working at this two-way interface. We
+welcome contributions on methods in which fuzzy representations improve
+learning, robustness, interpretability, and human-machine interaction. We
+equally welcome methods that use statistical, kernel-based, evolutionary,
+neural, and other machine-learning techniques to induce membership functions,
+fuzzy rules, aggregation operators, and granular representations.
+
+Particular attention will be devoted to the methodological foundations of
+data-driven fuzzy-set construction: the semantics and identifiability of
+learned membership degrees, the incorporation of expert knowledge and
+structural constraints, the evaluation and comparison of induced fuzzy sets,
+and the trade-off between accuracy, interpretability, complexity, and
+computational efficiency. Applications are also welcome, for example in
+trustworthy AI, knowledge representation, bioinformatics, anomaly detection,
+natural-language processing, decision support, and resource-constrained
+intelligent systems.
+
+
+TOPICS
+
+Topics of interest include, but are not limited to:
+
+- Data-driven induction of fuzzy sets and membership functions
+- Machine learning from fuzzy, imprecise, or partially reliable data
+- Learning with graded, ambiguous, weak, or uncertain labels
+- Fuzzy classification, regression, clustering, and feature learning
+- Neuro-fuzzy and deep fuzzy systems
+- Evolutionary and optimization-based learning of fuzzy systems
+- Learning fuzzy rules, linguistic models, and aggregation operators
+- Granular computing and shadowed-set learning
+- Interpretability and explainability of fuzzy machine-learning models
+- Statistical validation and evaluation of learned fuzzy sets
+- Robustness, reliability, calibration, and uncertainty quantification
+- Complexity reduction and compression of fuzzy models
+- Online, incremental, and evolving fuzzy learning
+- Hybrid knowledge-driven and data-driven learning
+- Applications of fuzzy machine learning in scientific and societal domains
+
+
+IMPORTANT DATES (23:59 AoE)
+
+Paper submission deadline ............ 14 February 2027
+Notification of acceptance ........... 16 April 2027
+Final version and author registration  9 May 2027
+Conference ........................... 13-17 September 2027
+
+
+SUBMISSION
+
+Papers are submitted through the main IFSA-EUSFLAT 2027 submission system and
+follow the same guidelines, formats, and deadlines as regular papers:
+
+- Full papers: 12-15 pages plus references, published in Springer Lecture
+  Notes in Computer Science (LNCS)
+- Communications: at least 6 pages, published in a separate open collection
+- Abstracts: up to 5 pages, published in a separate open collection
+
+Selected contributions will be considered for publication in extended form in
+journals or edited books. Submission instructions will be available at
+https://eusflat.org/2027-conference/ and https://ml4fs.github.io
+
+
+ORGANIZERS
+
+Dario Malchiodi, Università degli Studi di Milano, Italy
+  dario.malchiodi@unimi.it
+
+José Antonio Sanz Delgado, Universidad Pública de Navarra, Spain
+  joseantonio.sanz@unavarra.es

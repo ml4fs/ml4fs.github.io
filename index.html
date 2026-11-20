@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ML4FS · Machine Learning with and for Fuzzy Sets · IFSA-EUSFLAT 2027</title>
+<meta name="description" content="Call for papers: ML4FS special session on Machine Learning with and for Fuzzy Sets at IFSA-EUSFLAT 2027, Bari, Italy, 13–17 September 2027.">
+<meta property="og:title" content="ML4FS – Machine Learning with and for Fuzzy Sets">
+<meta property="og:description" content="Special session at IFSA-EUSFLAT 2027, Bari, Italy, 13–17 September 2027. Paper submission deadline: 14 February 2027.">
+<meta property="og:url" content="https://ml4fs.github.io/">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231f4e79'/%3E%3Cpath d='M3 26 C10 26 11 7 16 7 S22 26 29 26' fill='none' stroke='%23fff' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --surface: #ffffff;
+    --text: #1d232b;
+    --muted: #5a6470;
+    --line: #e3e0d8;
+    --accent: #1f4e79;
+    --accent-soft: #e8eff6;
+    --highlight: #b5462f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12161b;
+      --surface: #1a2027;
+      --text: #e6e8eb;
+      --muted: #9aa4af;
+      --line: #2c343d;
+      --accent: #8fb8e0;
+      --accent-soft: #1f2b38;
+      --highlight: #f08c6e;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  a:hover { text-decoration-thickness: 2px; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+
+  header.hero {
+    border-bottom: 1px solid var(--line);
+    padding: 56px 0 44px;
+    background:
+      radial-gradient(ellipse at 85% 0%, var(--accent-soft), transparent 60%),
+      var(--bg);
+  }
+  .eyebrow {
+    font-size: 13px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--highlight); margin: 0 0 14px;
+  }
+  h1 {
+    font-family: "Source Serif 4", Georgia, serif; font-weight: 600;
+    font-size: clamp(32px, 6vw, 52px); line-height: 1.1; margin: 0 0 10px; letter-spacing: -.01em;
+  }
+  .acronym { color: var(--accent); }
+  .sub { font-size: 19px; color: var(--muted); margin: 0 0 28px; }
+  .facts { display: flex; flex-wrap: wrap; gap: 10px 28px; margin: 0; padding: 0; list-style: none; font-size: 15px; }
+  .facts li { display: flex; gap: 8px; align-items: baseline; }
+  .facts b { font-weight: 600; }
+  .cta { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn {
+    display: inline-block; padding: 10px 18px; border-radius: 8px; font-weight: 500; font-size: 15px;
+    text-decoration: none; border: 1px solid var(--accent);
+  }
+  .btn.primary { background: var(--accent); color: var(--bg); }
+  .btn.ghost { color: var(--accent); }
+
+  nav.toc { border-bottom: 1px solid var(--line); font-size: 14px; position: sticky; top: 0; background: var(--bg); z-index: 2; }
+  nav.toc .wrap { display: flex; gap: 22px; overflow-x: auto; padding-top: 12px; padding-bottom: 12px; }
+  nav.toc a { color: var(--muted); text-decoration: none; white-space: nowrap; }
+  nav.toc a:hover { color: var(--accent); }
+
+  section { padding: 44px 0 8px; scroll-margin-top: 50px; }
+  h2 {
+    font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: 28px;
+    margin: 0 0 16px; letter-spacing: -.005em;
+  }
+  p { margin: 0 0 14px; }
+
+  ul.topics { columns: 2; column-gap: 36px; padding-left: 20px; margin: 0; }
+  ul.topics li { break-inside: avoid; margin-bottom: 6px; }
+  @media (max-width: 640px) { ul.topics { columns: 1; } }
+
+  table.dates { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+  table.dates td { padding: 12px 16px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  table.dates tr:last-child td { border-bottom: 0; }
+  table.dates td:last-child { text-align: right; font-weight: 600; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  table.dates tr.key td { color: var(--highlight); }
+  .note { font-size: 14px; color: var(--muted); margin-top: 10px; }
+
+  .types { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 18px 0; }
+  @media (max-width: 640px) { .types { grid-template-columns: 1fr; } }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; }
+  .card h3 { margin: 0 0 4px; font-size: 16px; font-weight: 600; }
+  .card .len { font-family: "Source Serif 4", Georgia, serif; font-size: 22px; color: var(--accent); margin: 0 0 6px; }
+  .card p { font-size: 14px; color: var(--muted); margin: 0; }
+
+  .callout { border-left: 3px solid var(--highlight); background: var(--surface); padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 18px 0; font-size: 15px; }
+
+  .people { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 640px) { .people { grid-template-columns: 1fr; } }
+  .person h3 { margin: 0 0 2px; font-size: 18px; font-weight: 600; }
+  .person .aff { color: var(--muted); font-size: 14px; margin: 0 0 10px; }
+  .person .links { font-size: 14px; display: flex; gap: 14px; flex-wrap: wrap; }
+
+  footer { margin-top: 56px; border-top: 1px solid var(--line); padding: 24px 0 40px; font-size: 14px; color: var(--muted); }
+
+  @media print {
+    nav.toc, .cta { display: none; }
+    header.hero { background: none; padding: 0 0 20px; }
+    body { font-size: 12pt; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Call for papers · Special session</p>
+    <h1>Machine Learning with and for Fuzzy Sets <span class="acronym">(ML4FS)</span></h1>
+    <p class="sub">at <a href="https://eusflat.org/2027-conference/">IFSA-EUSFLAT 2027</a>, the Joint 22nd IFSA World Congress and 15th EUSFLAT Conference</p>
+    <ul class="facts">
+      <li>📍 <span><b>Bari, Italy</b> · Polytechnic University of Bari</span></li>
+      <li>📅 <span><b>13–17 September 2027</b></span></li>
+      <li>⏰ <span>Submission deadline: <b>14 February 2027</b></span></li>
+    </ul>
+    <div class="cta">
+      <a class="btn primary" href="#submission">How to submit</a>
+      <a class="btn ghost" href="cfp.txt">Plain-text call</a>
+    </div>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Sections">
+  <div class="wrap">
+    <a href="#scope">Scope</a>
+    <a href="#topics">Topics</a>
+    <a href="#dates">Important dates</a>
+    <a href="#submission">Submission</a>
+    <a href="#organizers">Organizers</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<section id="scope">
+  <h2>Scope</h2>
+  <p>Machine learning and fuzzy set theory offer complementary perspectives on learning from complex, uncertain, and gradually structured data. Fuzzy sets give machine-learning systems principled ways to represent vagueness, graded concepts, uncertain labels, and linguistic knowledge. Conversely, machine-learning techniques make it possible to construct, adapt, validate, and compress fuzzy sets and fuzzy systems directly from data.</p>
+  <p>ML4FS brings together researchers working at this two-way interface. We welcome contributions on methods in which fuzzy representations improve learning, robustness, interpretability, and human–machine interaction. We equally welcome methods that use statistical, kernel-based, evolutionary, neural, and other machine-learning techniques to induce membership functions, fuzzy rules, aggregation operators, and granular representations.</p>
+  <p>Particular attention will be devoted to the methodological foundations of data-driven fuzzy-set construction:</p>
+  <ul>
+    <li>the semantics and identifiability of learned membership degrees,</li>
+    <li>the incorporation of expert knowledge and structural constraints,</li>
+    <li>the evaluation and comparison of induced fuzzy sets,</li>
+    <li>the trade-off between accuracy, interpretability, complexity, and computational efficiency.</li>
+  </ul>
+  <p>The session also welcomes applications showing how fuzzy and machine-learning methods can cooperate. Examples include trustworthy AI, knowledge representation, bioinformatics, anomaly detection, natural-language processing, decision support, and resource-constrained intelligent systems.</p>
+</section>
+
+<section id="topics">
+  <h2>Topics</h2>
+  <p>Topics of interest include, but are not limited to:</p>
+  <ul class="topics">
+    <li>Data-driven induction of fuzzy sets and membership functions</li>
+    <li>Machine learning from fuzzy, imprecise, or partially reliable data</li>
+    <li>Learning with graded, ambiguous, weak, or uncertain labels</li>
+    <li>Fuzzy classification, regression, clustering, and feature learning</li>
+    <li>Neuro-fuzzy and deep fuzzy systems</li>
+    <li>Evolutionary and optimization-based learning of fuzzy systems</li>
+    <li>Learning fuzzy rules, linguistic models, and aggregation operators</li>
+    <li>Granular computing and shadowed-set learning</li>
+    <li>Interpretability and explainability of fuzzy machine-learning models</li>
+    <li>Statistical validation and evaluation of learned fuzzy sets</li>
+    <li>Robustness, reliability, calibration, and uncertainty quantification</li>
+    <li>Complexity reduction and compression of fuzzy models</li>
+    <li>Online, incremental, and evolving fuzzy learning</li>
+    <li>Hybrid knowledge-driven and data-driven learning</li>
+    <li>Applications of fuzzy machine learning in scientific and societal domains</li>
+  </ul>
+</section>
+
+<section id="dates">
+  <h2>Important dates</h2>
+  <table class="dates">
+    <tr class="key"><td>Paper submission deadline</td><td>14 February 2027</td></tr>
+    <tr><td>Notification of acceptance</td><td>16 April 2027</td></tr>
+    <tr><td>Final version and author registration</td><td>9 May 2027</td></tr>
+    <tr><td>Conference</td><td>13–17 September 2027</td></tr>
+  </table>
+  <p class="note">All deadlines are 23:59 Anywhere on Earth (AoE). Any extensions will be announced on the <a href="https://eusflat.org/2027-conference/">conference website</a>.</p>
+</section>
+
+<section id="submission">
+  <h2>Submission</h2>
+  <p>Papers for ML4FS are submitted through the main IFSA-EUSFLAT 2027 submission system. They follow the same guidelines, formats, and deadlines as regular papers and go through the same peer review. Three types of contribution are accepted:</p>
+  <div class="types">
+    <div class="card"><h3>Full papers</h3><p class="len">12–15 pages</p><p>plus references. Published in Springer <i>Lecture Notes in Computer Science</i> (LNCS).</p></div>
+    <div class="card"><h3>Communications</h3><p class="len">≥ 6 pages</p><p>Collected in a separate open collection.</p></div>
+    <div class="card"><h3>Abstracts</h3><p class="len">≤ 5 pages</p><p>Collected in a separate open collection.</p></div>
+  </div>
+  <p>Selected contributions will be considered for publication in extended form in journals or edited books.</p>
+  <div class="callout">
+    <b>Submission system:</b> the link and detailed instructions, including how to select the ML4FS special session, will be published on the <a href="https://eusflat.org/2027-conference/program/">conference call for papers</a> page and mirrored here as soon as they are available.
+  </div>
+  <p>At least one author of each accepted paper must register for the conference and present the work in person.</p>
+</section>
+
+<section id="organizers">
+  <h2>Organizers</h2>
+  <div class="people">
+    <div class="card person">
+      <h3>Dario Malchiodi</h3>
+      <p class="aff">Department of Computer Science<br>Università degli Studi di Milano, Italy</p>
+      <p class="links"><a href="mailto:dario.malchiodi@unimi.it">dario.malchiodi@unimi.it</a> <a href="https://malchiodi.di.unimi.it">Web page</a></p>
+    </div>
+    <div class="card person">
+      <h3>José Antonio Sanz Delgado</h3>
+      <p class="aff">Dept. of Statistics, Computer Science and Mathematics<br>Universidad Pública de Navarra, Spain</p>
+      <p class="links"><a href="mailto:joseantonio.sanz@unavarra.es">joseantonio.sanz@unavarra.es</a> <a href="https://www.unavarra.es/pdi?uid=7828&amp;dato=descripcion">Web page</a></p>
+    </div>
+  </div>
+  <p class="note" style="margin-top:16px">Questions about the session? Write to either organizer.</p>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    ML4FS · Special session at IFSA-EUSFLAT 2027, Bari, Italy ·
+    <a href="https://eusflat.org/2027-conference/">Conference website</a>
+  </div>
+</footer>
+
+</body>
+</html>
